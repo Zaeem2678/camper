@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Box, Typography } from '@mui/material';
 
 const InfoBox = ({ text, bgColor = '#FDF4E7', textColor = '#8B4513' }) => {

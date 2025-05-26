@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import {
   Box,
   Button,
@@ -10,17 +9,17 @@ import {
   IconButton,
   useTheme,
 } from '@mui/material';
-import { 
-  Visibility, 
+import {
+  Visibility,
   VisibilityOff,
   EmailOutlined,
   LockOutlined,
-  PersonOutline
+  PersonOutline,
 } from '@mui/icons-material';
 import AuthLayout from './AuthLayout';
+import CustomDialog from '../../components/CustomDialog';  // Adjust this path if needed
 
 const SignUp = () => {
-  const { t } = useTranslation();
   const theme = useTheme();
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -34,6 +33,12 @@ const SignUp = () => {
     agreeToTerms: false,
   });
 
+  // Dialog state
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [dialogType, setDialogType] = useState('success'); // 'success' or 'error'
+  const [dialogTitle, setDialogTitle] = useState('');
+  const [dialogMessage, setDialogMessage] = useState('');
+
   const handleChange = (event) => {
     const { name, value, checked } = event.target;
     setFormData((prev) => ({
@@ -44,6 +49,23 @@ const SignUp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    if (formData.password !== formData.confirmPassword) {
+      // Show error dialog
+      setDialogType('error');
+      setDialogTitle('Error');
+      setDialogMessage('Passwords do not match. Please try again.');
+      setDialogOpen(true);
+      return;
+    }
+
+    // Passwords match - success dialog
+    setDialogType('success');
+    setDialogTitle('Success');
+    setDialogMessage('Your account has been created successfully!');
+    setDialogOpen(true);
+
+    // You can add further form submission logic here (API call, etc)
     console.log(formData);
   };
 
@@ -58,7 +80,7 @@ const SignUp = () => {
     '&::placeholder': {
       fontSize: '13px',
       color: '#888',
-    }
+    },
   };
 
   const iconStyle = {
@@ -70,7 +92,7 @@ const SignUp = () => {
     width: '18px',
     height: '18px',
     zIndex: 1,
-    pointerEvents: 'none'
+    pointerEvents: 'none',
   };
 
   return (
@@ -84,61 +106,61 @@ const SignUp = () => {
           margin: '0 auto',
         }}
       >
+        {/* Logo */}
         <Box sx={{ width: '100%', mb: 4, textAlign: 'center' }}>
           <img
             src="https://camperdooly.com/wp-content/uploads/2025/01/Camperdooly3.png"
-            alt={t('common.logo')}
+            alt="Logo"
             style={{ width: '100%', maxWidth: '320px' }}
           />
         </Box>
-        
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
+
+        {/* Heading & Sign In link */}
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            mb: 2,
+          }}
+        >
           <Typography variant="h6" sx={{ fontWeight: 600 }}>
-            {t('auth.createAccount')}
+            Create Account
           </Typography>
           <Typography variant="body2">
             <Link href="/signin" sx={{ textDecoration: 'none', color: '#888' }}>
-              {t('auth.signIn')}
+              Sign In
             </Link>
           </Typography>
         </Box>
 
+        {/* Form */}
         <Box component="form" onSubmit={handleSubmit} sx={{ width: '100%' }}>
+          {/* Email */}
           <Box sx={{ mb: 2, position: 'relative' }}>
             <EmailOutlined style={iconStyle} />
             <input
               type="email"
               name="email"
-              placeholder={t('auth.emailPlaceholder')}
+              placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
               required
-              style={{
-                ...inputStyle,
-                '::placeholder': {
-                  fontSize: '13px',
-                  color: '#888'
-                }
-              }}
+              style={inputStyle}
             />
           </Box>
 
+          {/* Password */}
           <Box sx={{ mb: 2, position: 'relative' }}>
             <LockOutlined style={iconStyle} />
             <input
               type={showPassword ? 'text' : 'password'}
               name="password"
-              placeholder={t('auth.passwordPlaceholder')}
+              placeholder="Enter your password"
               value={formData.password}
               onChange={handleChange}
               required
-              style={{
-                ...inputStyle,
-                '::placeholder': {
-                  fontSize: '13px',
-                  color: '#888'
-                }
-              }}
+              style={inputStyle}
             />
             <IconButton
               onClick={() => setShowPassword(!showPassword)}
@@ -150,26 +172,25 @@ const SignUp = () => {
                 color: theme.palette.text.secondary,
               }}
             >
-              {showPassword ? <VisibilityOff sx={{ fontSize: '18px' }} /> : <Visibility sx={{ fontSize: '18px' }} />}
+              {showPassword ? (
+                <VisibilityOff sx={{ fontSize: '18px' }} />
+              ) : (
+                <Visibility sx={{ fontSize: '18px' }} />
+              )}
             </IconButton>
           </Box>
 
+          {/* Confirm Password */}
           <Box sx={{ mb: 2, position: 'relative' }}>
             <LockOutlined style={iconStyle} />
             <input
               type={showConfirmPassword ? 'text' : 'password'}
               name="confirmPassword"
-              placeholder={t('auth.confirmPasswordPlaceholder')}
+              placeholder="Confirm your password"
               value={formData.confirmPassword}
               onChange={handleChange}
               required
-              style={{
-                ...inputStyle,
-                '::placeholder': {
-                  fontSize: '13px',
-                  color: '#888'
-                }
-              }}
+              style={inputStyle}
             />
             <IconButton
               onClick={() => setShowConfirmPassword(!showConfirmPassword)}
@@ -181,65 +202,55 @@ const SignUp = () => {
                 color: theme.palette.text.secondary,
               }}
             >
-              {showConfirmPassword ? <VisibilityOff sx={{ fontSize: '18px' }} /> : <Visibility sx={{ fontSize: '18px' }} />}
+              {showConfirmPassword ? (
+                <VisibilityOff sx={{ fontSize: '18px' }} />
+              ) : (
+                <Visibility sx={{ fontSize: '18px' }} />
+              )}
             </IconButton>
           </Box>
 
+          {/* Nickname */}
           <Box sx={{ mb: 2, position: 'relative' }}>
             <PersonOutline style={iconStyle} />
             <input
               type="text"
               name="nickname"
-              placeholder={t('auth.nicknamePlaceholder')}
+              placeholder="Nickname"
               value={formData.nickname}
               onChange={handleChange}
               required
-              style={{
-                ...inputStyle,
-                '::placeholder': {
-                  fontSize: '13px',
-                  color: '#888'
-                }
-              }}
+              style={inputStyle}
             />
           </Box>
 
+          {/* First Name */}
           <Box sx={{ mb: 2, position: 'relative' }}>
             <PersonOutline style={iconStyle} />
             <input
               type="text"
               name="firstName"
-              placeholder={t('auth.firstNamePlaceholder')}
+              placeholder="First Name"
               value={formData.firstName}
               onChange={handleChange}
-              style={{
-                ...inputStyle,
-                '::placeholder': {
-                  fontSize: '13px',
-                  color: '#888'
-                }
-              }}
+              style={inputStyle}
             />
           </Box>
 
+          {/* Last Name */}
           <Box sx={{ mb: 2, position: 'relative' }}>
             <PersonOutline style={iconStyle} />
             <input
               type="text"
               name="lastName"
-              placeholder={t('auth.lastNamePlaceholder')}
+              placeholder="Last Name"
               value={formData.lastName}
               onChange={handleChange}
-              style={{
-                ...inputStyle,
-                '::placeholder': {
-                  fontSize: '13px',
-                  color: '#888'
-                }
-              }}
+              style={inputStyle}
             />
           </Box>
 
+          {/* Agree to Terms */}
           <Box sx={{ mb: 2 }}>
             <FormControlLabel
               control={
@@ -260,19 +271,20 @@ const SignUp = () => {
               }
               label={
                 <Typography variant="body2" sx={{ color: '#888', fontSize: '14px' }}>
-                  {t('auth.agreeToTerms')}{' '}
+                  I agree to{' '}
                   <Link href="#" sx={{ color: 'inherit', textDecoration: 'none' }}>
-                    {t('common.termsAndConditions')}
-                  </Link>
-                  {' and '}
+                    Terms and Conditions
+                  </Link>{' '}
+                  and{' '}
                   <Link href="#" sx={{ color: 'inherit', textDecoration: 'none' }}>
-                    {t('common.privacyPolicy')}
+                    Privacy Policy
                   </Link>
                 </Typography>
               }
             />
           </Box>
 
+          {/* Submit Button */}
           <Button
             type="submit"
             fullWidth
@@ -284,12 +296,21 @@ const SignUp = () => {
               borderRadius: 2,
             }}
           >
-            {t('auth.createAccount')}
+            Create Account
           </Button>
         </Box>
+
+        {/* Custom Dialog for success/error */}
+        <CustomDialog
+          open={dialogOpen}
+          onClose={() => setDialogOpen(false)}
+          title={dialogTitle}
+          message={dialogMessage}
+          type={dialogType}
+        />
       </Box>
     </AuthLayout>
   );
 };
 
-export default SignUp; 
+export default SignUp;

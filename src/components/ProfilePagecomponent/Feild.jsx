@@ -17,6 +17,8 @@ const Field = ({
   withVisibility = true,
   labelFontSize = "16px",
   labelFontWeight = 500,
+  value = "",           // Add value prop with default empty string
+  onChange = () => {},  // Add onChange prop with default noop
 }) => {
   const { t } = useTranslation();
   const [showOptions, setShowOptions] = useState(false);
@@ -112,6 +114,8 @@ const Field = ({
             borderRadius: "6px",
             display: "block",
           }}
+          value={value}         // Controlled input value
+          onChange={onChange}   // Controlled input onChange
         />
       )}
 

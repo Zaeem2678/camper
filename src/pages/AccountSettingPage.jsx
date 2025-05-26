@@ -99,6 +99,7 @@ const AccountSettingPage = () => {
                 selected={selectedOption === item.key}
                 onClick={() => setSelectedOption(item.key)}
                 sx={{
+                  cursor: 'pointer',
                   bgcolor: selectedOption === item.key ? (theme) => theme.palette.primary.main : 'transparent',
                   color: selectedOption === item.key ? '#fff' : 'inherit',
                   '& .MuiListItemIcon-root': {

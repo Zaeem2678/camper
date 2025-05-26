@@ -51,10 +51,12 @@ const SignIn = () => {
     event.preventDefault();
     console.log('Login form submitted');
     console.log('Form data:', formData);
-    // Add navigation to the home page after successful login (for now)
-    console.log('Attempting to navigate to /');
+
+    // Set success message in localStorage before navigation
+    localStorage.setItem('loginSuccessMessage', 'Login successful!');
+
+    // Navigate to homepage
     navigate('/');
-    console.log('Navigation call made.');
   };
 
   const inputStyle = {
@@ -64,7 +66,6 @@ const SignIn = () => {
     border: '1px solid #e0e0e0',
     borderRadius: '8px',
     fontSize: '14px',
-    
     outline: 'none',
     '&::placeholder': {
       fontSize: '13px',
@@ -124,13 +125,7 @@ const SignIn = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              style={{
-                ...inputStyle,
-                '::placeholder': {
-                  fontSize: '13px',
-                  color: '#888'
-                }
-              }}
+              style={inputStyle}
             />
           </Box>
 
@@ -143,13 +138,7 @@ const SignIn = () => {
               value={formData.password}
               onChange={handleChange}
               required
-              style={{
-                ...inputStyle,
-                '::placeholder': {
-                  fontSize: '13px',
-                  color: '#888'
-                }
-              }}
+              style={inputStyle}
             />
             <IconButton
               onClick={() => setShowPassword(!showPassword)}
@@ -210,7 +199,7 @@ const SignIn = () => {
             {t('auth.login')}
           </Button>
 
-          <Box sx={{ mt: 3, textAlign: 'center',mb: 12 }}>
+          <Box sx={{ mt: 3, textAlign: 'center', mb: 12 }}>
             <Typography variant="body2" color="#888">
               <Link href="#" color="inherit" sx={{ textDecoration: 'none' }}>
                 {t('common.termsAndConditions')}
@@ -274,4 +263,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn; 
+export default SignIn;
