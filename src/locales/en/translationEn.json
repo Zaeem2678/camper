@@ -1,0 +1,943 @@
+{
+  "common": {
+    "logo": "CamperDolly Logo",
+    "termsAndConditions": "Terms and conditions",
+    "privacyPolicy": "Privacy Policy",
+    "backToSignIn": "Back to sign in"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "createAccount": "Create Account",
+    "emailPlaceholder": "Email Address",
+    "passwordPlaceholder": "Password",
+    "confirmPasswordPlaceholder": "Confirm Password",
+    "rememberMe": "Remember Me",
+    "forgotPassword": "Forgot Password?",
+    "login": "Log In",
+    "nicknamePlaceholder": "Nickname",
+    "firstNamePlaceholder": "First name (optional)",
+    "lastNamePlaceholder": "Last name (optional)",
+    "agreeToTerms": "I agree to the",
+    "resetPassword": "Reset Password",
+    "newPasswordPlaceholder": "New Password",
+    "confirmNewPasswordPlaceholder": "Confirm New Password",
+    "forgotPasswordTitle": "Forgot Password",
+    "forgotPasswordDescription": "Please enter your username or email address. You will receive an email message with instructions on how to reset your password.",
+    "requestResetLink": "Request reset link",
+    "enterVerificationCode": "Enter Verification Code",
+    "verificationCodeDescription": "We have sent a verification code to your email address. Please enter the code below.",
+    "verifyCode": "Verify Code",
+    "didntReceiveCode": "Didn't receive the code?",
+    "resendCode": "Resend Code"
+  },
+  "hero": {
+    "pickupLocation": "Pickup Location",
+    "locationPlaceholder": "Enter a city or address",
+    "vehicleType": "Vehicle Type",
+    "startDate": "Start date",
+    "endDate": "End date",
+    "search": "Search",
+    "adventureBegins": "Your adventure begins here!",
+    "vehicleTypes": {
+      "all": "All",
+      "campervan": "Campervan",
+      "caravan": "Caravan",
+      "motorhome": "Motorhome"
+    }
+  },
+  "adventure": {
+    "title": "Start your adventure – with the perfect camper",
+    "description": "Camperdooly is more than just a camper rental platform – we're a vibrant social media community for camping enthusiasts! Discover unique motorhomes, campers, and caravans for rent, connect with like-minded people, and share your best travel experiences. Find inspiration, connect with other adventurers, and become part of a growing camping community. Whether you're looking for a camper or want to share your experiences – with Camperdooly, your adventure begins even before the trip!"
+  },
+  "welcome": {
+    "title": "Welcome to CAMPERDOOLY",
+    "subtitle": "The first international social media platform for campers and travelers",
+    "description": "Discover the freedom of mobile travel and become part of a unique community. At CAMPERDOOLY, we bring together people from all over the world who share their passion for traveling in a motorhome.",
+    "whatAwaitsYou": "What awaits you",
+    "features": {
+      "exchange": {
+        "title": "Exchange with like-minded people",
+        "description": "share your experiences, discover new travel destinations and receive valuable tips from other adventurers."
+      },
+      "rentals": {
+        "title": "Motorhome rentals",
+        "description": "Find the perfect vehicle for your next adventure or rent out your own easily and securely."
+      },
+      "community": {
+        "title": "Experience community",
+        "description": "Meet new people, plan tours together and find inspiration for your next trip."
+      },
+      "tools": {
+        "title": "Practical tools and tips",
+        "description": "From pitch recommendations to"
+      },
+      "route": {
+        "title": "Route planners",
+        "description": "everything you need for your trip in one place."
+      }
+    },
+    "joinCommunity": "Join the global CAMPERDOOLY community and become part of it. Your next adventure awaits!"
+  },
+  "cities": {
+    "title": "We Are Where You Are",
+    "description": "Discover our presence in the most popular cities, ready to make your adventures memorable."
+  },
+  "navbar": {
+    "index": "Index",
+    "newsFeed": "News Feed",
+    "members": "Members",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Newsletter Signup",
+      "description": "Subscribe to our newsletter and be the first to know about the latest updates, exclusive offers, and valuable insights.",
+      "emailPlaceholder": "Email Address *",
+      "subscribe": "Subscribe!"
+    },
+    "contact": {
+      "title": "Contact Info",
+      "description": "Have questions or need assistance? Get in touch with us—we're here to help!",
+      "reachUs": "Reach Us",
+      "ourLocation": "Our Location"
+    },
+    "importantLinks": {
+      "title": "Important Links",
+      "home": "Home",
+      "camperRegistration": "Camper Registration",
+      "listings": "Listings",
+      "newsFeed": "News Feed",
+      "shop": "Shop",
+      "account": "Account",
+      "displayRental": "Display Rental",
+      "members": "Members",
+      "register": "Register"
+    },
+    "bottom": {
+      "copyright": "© 2025 - Camperdooly",
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy",
+      "impressum": "Impressum"
+    }
+  },
+  "members": {
+    "title": "Members",
+    "search": {
+      "placeholder": "Search Members..."
+    },
+    "header": {
+      "allMembers": "All Members"
+    },
+    "filter": {
+      "recentlyActive": "Recently Active",
+      "newest": "Newest",
+      "popular": "Popular"
+    },
+    "grid": {
+      "badge": "Member",
+      "joined": "Joined",
+      "active": "Active",
+      "viewing": "Viewing {{start}} - {{end}} of {{total}} members"
+    }
+  },
+  "newsFeed": {
+    "title": "News Feed",
+    "search": {
+      "placeholder": "Search Feeds"
+    },
+    "tabs": {
+      "allUpdates": "All Updates"
+    },
+    "membersList": {
+      "title": "Members",
+      "filters": {
+        "newest": "NEWEST",
+        "active": "ACTIVE",
+        "popular": "POPULAR"
+      },
+      "seeAll": "SEE ALL"
+    },
+    "groupsList": {
+      "title": "Groups",
+      "noGroups": "There are no groups to display."
+    },
+    "forumsList": {
+      "title": "Forums",
+      "forumName": "Camperdooly Forum"
+    },
+    "onlineUsers": {
+      "title": "Who's Online",
+      "onlineCount": "ONLINE: {{count}}",
+      "noUsers": "There are no users currently online"
+    },
+    "activeMembers": {
+      "title": "Recently Active Members"
+    },
+    "updates": {
+      "actions": {
+        "updatedProfile": "updated their profile",
+        "postedUpdate": "posted an update",
+        "changedPhoto": "changed their profile photo",
+        "becameMember": "became a registered member"
+      }
+    }
+  },
+  "post": {
+    "sharedPhoto": "shared a photo",
+    "reactions": {
+      "like": "Like",
+      "love": "Love",
+      "haha": "Haha",
+      "wow": "Wow",
+      "sad": "Sad",
+      "angry": "Angry"
+    },
+    "privacy": {
+      "public": "Public",
+      "allMembers": "All Members",
+      "myConnections": "My Connections",
+      "onlyMe": "Only Me"
+    },
+    "actions": {
+      "delete": "Delete",
+      "turnOffCommenting": "Turn Off Commenting",
+      "pinToFeed": "Pin to Feed",
+      "download": "Download",
+      "turnOffNotifications": "Turn Off Notifications"
+    },
+    "comment": {
+      "writeComment": "Write a comment...",
+      "comment": "Comment"
+    },
+    "reactionCount": "You and {{count}} others reacted with \"{{reaction}}\""
+  },
+  "profile": {
+    "tabs": {
+      "timeline": "Timeline",
+      "profile": "Profile",
+      "myCamper": "My Camper",
+      "myOrders": "My Orders",
+      "myBookings": "My Bookings",
+      "connections": "Connections",
+      "videos": "Videos",
+      "photos": "Photos",
+      "sellMyCar": "Sell My Car",
+      "Handover Protocol":"Handover Protocol"
+    },
+    "box": {
+      "member": "Member",
+      "joined": "Joined",
+      "activeNow": "Active now",
+      "followers": "{{count}} followers",
+      "following": "{{count}} following"
+    },
+    "completeProfile": {
+      "title": "Complete Your Profile",
+      "progress": "{{percent}}%",
+      "steps": {
+        "details": {
+          "label": "Details",
+          "value": "1/3"
+        },
+        "profilePhoto": {
+          "label": "Profile Photo",
+          "value": "1/1"
+        },
+        "coverPhoto": {
+          "label": "Cover Photo",
+          "value": "0/1"
+        }
+      }
+    },
+    "edit": {
+      "title": "Edit Profile",
+      "viewProfile": "View Profile",
+      "sidebar": {
+        "edit": "Edit",
+        "profilePhoto": "Profile Photo",
+        "coverPhoto": "Cover Photo"
+      },
+      "form": {
+        "title": "Edit Profile Information",
+        "tabs": {
+          "detail": "Detail",
+          "userDetails": "User Details"
+        },
+        "fields": {
+          "nickname": "Nickname",
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "dateOfBirth": "Date of Birth",
+          "streetNumber": "Street Number",
+          "city": "City",
+          "state": "State",
+          "country": "Country",
+          "telephone": "Telephone",
+          "drivingLicense": "Driving License Number",
+          "personalLaw": "Personal Law Number"
+        },
+        "saveChanges": "Save Changes"
+      },
+      "component": {
+        "title": "Detail",
+        "edit": "Edit",
+        "nickname": "Nickname"
+      },
+      "coverPhoto": {
+        "title": "Change cover photo",
+        "info": "Your cover photo will be displayed on your profile and throughout the site.",
+        "dropZone": {
+          "text": "Drop your image here or select a file",
+          "button": "Select Your File"
+        },
+        "recommendation": "For best results, upload an image that is 1200px by 300px or larger.",
+        "delete": {
+          "text": "If you'd like to delete your current cover photo, use the delete Cover Photo button.",
+          "button": "Delete My Cover Photo"
+        }
+      },
+      "field": {
+        "visibility": {
+          "public": "Public",
+          "allMembers": "All Members",
+          "myConnections": "My Connections",
+          "onlyMe": "Only Me",
+          "select": "Select who can see this field?",
+          "change": "Change",
+          "close": "Close"
+        },
+        "dateOfBirth": {
+          "day": "Day",
+          "month": "Month",
+          "year": "Year",
+          "months": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
+          }
+        }
+      }
+    },
+    "dropdown": {
+      "menu": {
+        "profile": {
+          "label": "Profile",
+          "viewProfile": "View Profile",
+          "editProfile": "Edit Profile",
+          "profilePhoto": "Profile Photo",
+          "coverPhoto": "Cover Photo"
+        },
+        "account": {
+          "label": "Account",
+          "loginInfo": "Login Information",
+          "notificationSettings": "Notification Settings",
+          "privacy": "Privacy",
+          "groupInvites": "Group Invites",
+          "exportData": "Export Data"
+        },
+        "yourCamper": {
+          "label": "Your Camper",
+          "myCamper": "My Camper"
+        },
+        "timeline": {
+          "label": "Timeline",
+          "posts": "Posts"
+        },
+        "notifications": {
+          "label": "Notifications",
+          "unread": "Unread",
+          "read": "Read"
+        },
+        "messages": "Messages",
+        "connections": {
+          "label": "Connections",
+          "myConnections": "My Connections",
+          "requests": "Requests"
+        },
+        "groups": {
+          "label": "Groups",
+          "createGroup": "Create Group",
+          "myGroups": "My Groups",
+          "invitations": "Invitations"
+        },
+        "videos": {
+          "label": "Videos",
+          "myVideos": "My Videos"
+        },
+        "photos": {
+          "label": "Photos",
+          "myPhotos": "My Photos",
+          "album": "Album"
+        },
+        "forums": {
+          "label": "Forums",
+          "discussions": "Discussions",
+          "replies": "Replies",
+          "title": "Forum",
+          "tabs": {
+            "myDiscussions": "My Discussions",
+            "myReplies": "My Replies",
+            "myFavorites": "My Favorites"
+          },
+          "discussionsStarted": "Forum Discussions Started",
+          "noDiscussions": "You have not created any discussions."
+        },
+        "logout": "Log Out"
+      }
+    },
+    "orders": {
+      "title": "All orders I have",
+      "table": {
+        "orderNo": "Order No.",
+        "vehicleDetails": "Vehicle Details",
+        "vehicleOwner": "Vehicle Owner",
+        "user": "User",
+        "startDate": "Start date",
+        "endDate": "End Date",
+        "totalDays": "Total days",
+        "subTotal": "Sub Total",
+        "tax": "Tax (19%)",
+        "total": "Total",
+        "invoice": "Invoice",
+        "orderStatus": "Order status",
+        "action": "Action",
+        "view": "View"
+      },
+      "status": {
+        "completed": "Completed"
+      }
+    }
+  },
+  "account": {
+    "title": "Account Settings",
+    "sidebar": {
+      "loginInformation": "Login Information",
+      "notifications": "Notifications",
+      "privacy": "Privacy",
+      "groupInvites": "Group Invites",
+      "exportData": "Export Data"
+    },
+    "notificationSettings": {
+      "title": "Notification Settings",
+      "description": "Choose which notifications to receive across all your devices.",
+      "email": {
+        "title": "Email",
+        "description": "A notification sent to your inbox"
+      },
+      "web": {
+        "title": "Web",
+        "description": "A notification in the corner of your screen"
+      },
+      "enableNotifications": "Enable Notifications",
+      "tabs": {
+        "preferences": "Preferences",
+        "subscriptions": "Subscriptions"
+      },
+      "noSubscriptions": "No subscriptions available.",
+      "sections": {
+        "mentions": "MENTIONS",
+        "posts": "POSTS",
+        "accountSettings": "ACCOUNT SETTINGS",
+        "activityFeeds": "ACTIVITY FEEDS",
+        "socialGroups": "SOCIAL GROUPS",
+        "discussionForums": "DISCUSSION FORUMS",
+        "privateMessages": "PRIVATE MESSAGES",
+        "memberConnections": "MEMBER CONNECTIONS"
+      },
+      "items": {
+        "mentionDescription": "A member mentions you using \"@sudotahirseed\"",
+        "postReplyDescription": "A member replies to your post comment",
+        "passwordChangeDescription": "Your password is changed",
+        "activityReplyDescription": "A member replies to your post or comment",
+        "newPostDescription": "New post by a member you're following",
+        "newFollowerDescription": "A member starts following you",
+        "groupDetailsUpdateDescription": "The details of a group you manage are updated",
+        "groupPromotionDescription": "You're promoted in a group",
+        "groupInviteDescription": "You receive a new invite to join a group",
+        "groupJoinRequestDescription": "A member requests to join a group you manage",
+        "groupJoinAcceptedDescription": "Your request to join a group is accepted",
+        "groupJoinRejectedDescription": "Your request to join a group is rejected",
+        "groupNewPostDescription": "New post in a group you're subscribed to",
+        "groupNewDiscussionDescription": "New discussion in a group you're subscribed to",
+        "forumNewDiscussionDescription": "New discussion in a forum you're subscribed to",
+        "forumNewReplyDescription": "New reply in a discussion you're subscribed to",
+        "privateMessageDescription": "You receive a new private message",
+        "connectionRequestDescription": "You receive a new connection request",
+        "connectionAcceptedDescription": "Your connection request is accepted"
+      },
+      "subscriptions": {
+        "groups": "Groups",
+        "forums": "Forums",
+        "discussions": "Discussions",
+        "noGroups": "You are not currently subscribed to any groups.",
+        "noForums": "You are not currently subscribed to any forums.",
+        "noDiscussions": "You are not currently subscribed to any discussions."
+      }
+    },
+    "loginInformation": {
+      "title": "Login Information",
+      "email": "Account Email",
+      "nickname": "Nickname",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "update": "Save Changes",
+      "info": "Leave password fields blank for no change",
+      "newPasswordLabel": "Add Your New Password",
+      "repeatPasswordLabel": "Repeat Your New Password"
+    },
+    "privacySettings": {
+      "title": "Privacy Settings",
+      "profileVisibilitySettings": "Profile Visibility Settings",
+      "profileVisibilitySubtext": "Select who can see your profile detail",
+      "detail": "Detail",
+      "visibility": "Visibility",
+      "profileVisibility": "Profile Visibility",
+      "activityStatus": "Show Activity Status",
+      "whoCanMessage": "Who Can Message Me",
+      "whoCanSeePosts": "Who Can See My Posts",
+      "allMembers": "All Members",
+      "allConnections": "All Connections",
+      "onlyMe": "Only Me",
+      "public": "Public"
+    },
+    "groupInvites": {
+      "title": "Group Invites",
+      "accept": "Accept",
+      "decline": "Decline",
+      "noInvites": "No pending group invites"
+    },
+    "exportData": {
+      "title": "Request an export of your data",
+      "description": "You may download a copy of all data you have created on this platform. Click the button below to start a new request. An email will be sent to you to verify the request. Then the site admin will review your request and if approved, a zip file will be generated and emailed to you.",
+      "requestExport": "Request Data Export",
+      "personalInfo": "Personal Information",
+      "personalInfoDesc": "Download your personal information including profile details and account settings",
+      "photos": "Photos",
+      "photosDesc": "Download all photos you've uploaded to your profile and posts",
+      "messages": "Messages",
+      "messagesDesc": "Download your message history and conversations",
+      "download": "Download"
+    }
+  },
+  "forums": {
+    "label": "Forums",
+    "title": "Forum",
+    "tabs": {
+      "myDiscussions": "My Discussions",
+      "myReplies": "My Replies",
+      "myFavorites": "My Favorites"
+    },
+    "discussionsStarted": "Forum Discussions Started",
+    "noDiscussions": "You have not created any discussions."
+  },
+  "logout": "Log Out",
+  "protocol": {
+    "step1": {
+      "title": "Step 1",
+      "subtitle": "Please fill out two copies for tenant and landlord",
+      "bookingInfo": {
+        "title": "Booking Information",
+        "bookingNumber": "Booking Number",
+        "vehicleId": "Vehicle Identification Number"
+      },
+      "tenantInfo": {
+        "title": "Tenant Information",
+        "name": "Name",
+        "email": "Email",
+        "address": "Address",
+        "telephone": "Telephone"
+      },
+      "landlordInfo": {
+        "title": "Landlord Information",
+        "name": "Name",
+        "email": "Email",
+        "address": "Address",
+        "telephone": "Telephone"
+      }
+    },
+    "step2": {
+      "title": "Step 2",
+      "vehiclePickup": {
+        "title": "Vehicle Pickup",
+        "date": "Date",
+        "time": "Time"
+      },
+      "vehicleReturn": {
+        "title": "Vehicle Return",
+        "date": "Date",
+        "time": "Time"
+      },
+      "personalInfo": {
+        "title": "Personal Information",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "country": "Country",
+        "city": "City",
+        "state": "State",
+        "zipCode": "Zip Code",
+        "dateOfBirth": "Date of Birth",
+        "identityCard": "Identity Card Number",
+        "drivingLicense": "Driving License Number",
+        "dateOfIssue": "Date of Issue"
+      }
+    },
+    "step3": {
+      "title": "Step 3",
+      "vehicleCondition": {
+        "title": "Vehicle Condition Assessment",
+        "mileage": "Mileage according to the meter",
+        "fuelTank": "Fuel Tank Level",
+        "engineOil": "Engine Oil Level",
+        "gasLevel": "Gas Level",
+        "freshWater": "Fresh Water Tank Level",
+        "wasteWater": "Waste Water Tank Level",
+        "tireTread": "Tire Tread Depth"
+      },
+      "units": {
+        "km": "km",
+        "percent": "%",
+        "mm": "mm"
+      }
+    },
+    "step4": {
+      "title": "Step 4",
+      "vehicleDocumentation": {
+        "title": "Vehicle Documentation and Equipment Check",
+        "description": "Please verify the presence of all required documents and equipment. Check the box if present.",
+        "items": {
+          "registration": "Vehicle registration document (registration)",
+          "insurance": "International insurance card",
+          "instructions": "Operating instructions",
+          "key": "Vehicle key",
+          "tools": "Onboard tools, warning triangle",
+          "safety": "First aid kit, safety vests",
+          "spareWheel": "Spare wheel and jack"
+        }
+      },
+      "additionalStatement": {
+        "description": "Any additional statement here related to the Yes/No checkboxes.",
+        "yes": "Yes",
+        "no": "No"
+      }
+    },
+    "step5": {
+      "title": "Step 5",
+      "vehicleOptions": {
+        "title": "Vehicle Options and Features",
+        "vehicleOption": "Vehicle Option",
+        "selectOption": "Select Option",
+        "option1": "Option 1",
+        "option2": "Option 2"
+      },
+      "features": {
+        "stove": "Stove",
+        "refrigerator": "Refrigerator with freezer compartment",
+        "waterConnection": "Water connection",
+        "hotWater": "Hot water",
+        "bikeRack": "4-way bike rack",
+        "winterSuitable": "My camper is not suitable for the winter"
+      },
+      "options": {
+        "yes": "Yes",
+        "no": "No"
+      }
+    },
+    "step6": {
+      "title": "Step 6",
+      "damageAssessment": {
+        "title": "Damage Assessment",
+        "description": "Please document any existing damage or issues with the vehicle.",
+        "noDamage": "No visible damage",
+        "damagePresent": "Damage present",
+        "location": "Location",
+        "description": "Description",
+        "photo": "Photo",
+        "addPhoto": "Add Photo",
+        "removePhoto": "Remove Photo"
+      },
+      "notes": {
+        "title": "Additional Notes",
+        "placeholder": "Enter any additional notes or comments here..."
+      }
+    },
+    "step7": {
+      "title": "Step 7",
+      "depositInfo": {
+        "title": "Deposit Information",
+        "description": "The landlord received the deposit from the tenant before handover and refunded it after return.",
+        "amountReceived": "Amount Received",
+        "amountRepaid": "Amount Repaid",
+        "currency": "€"
+      }
+    },
+    "step8": {
+      "title": "Step 8",
+      "signatures": {
+        "title": "Signatures",
+        "tenant": {
+          "title": "Tenant Signature",
+          "name": "Name",
+          "date": "Date",
+          "signature": "Signature"
+        },
+        "landlord": {
+          "title": "Landlord Signature",
+          "name": "Name",
+          "date": "Date",
+          "signature": "Signature"
+        },
+        "witness": {
+          "title": "Witness Signature",
+          "name": "Name",
+          "date": "Date",
+          "signature": "Signature"
+        }
+      }
+    }
+  },
+  "sellMyCar": {
+    "roleSelection": {
+      "title": "Select Your Option",
+      "subtitle": "Choose how you want to list your vehicle",
+      "description": "Select whether you want to sell or rent out your vehicle",
+      "options": {
+        "selling": {
+          "title": "Selling",
+          "description": "List your vehicle for sale"
+        },
+        "renting": {
+          "title": "Renting",
+          "description": "List your vehicle for rent"
+        }
+      }
+    },
+    "step1": {
+      "title": "Basic Information",
+      "subtitle": "Tell us about your vehicle",
+      "description": "Select your preferences to get started",
+      "fields": {
+        "option": "What you opt to do?",
+        "vehicleType": "Select the vehicle type",
+        "sellerType": "Select seller type"
+      },
+      "options": {
+        "sell": "Sell",
+        "rent": "Rent",
+        "trade": "Trade",
+        "lease": "Lease"
+      },
+      "vehicleTypes": {
+        "car": "Car",
+        "suv": "SUV",
+        "truck": "Truck",
+        "van": "Van",
+        "motorcycle": "Motorcycle",
+        "bus": "Bus",
+        "rv": "RV"
+      },
+      "sellerTypes": {
+        "private": "Private Seller",
+        "dealer": "Dealer",
+        "broker": "Broker",
+        "auction": "Auction",
+        "wholesale": "Wholesale"
+      }
+    },
+    "step2": {
+      "title": "Vehicle Details",
+      "subtitle": "Tell us more about your vehicle",
+      "description": "Provide detailed information about your vehicle",
+      "fields": {
+        "brand": "Select Brand",
+        "modal": "Select Modal",
+        "constructionYear": "Construction Year",
+        "category": "Category",
+        "seats": "Number of Seats",
+        "length": "Vehicle Length (meters)",
+        "width": "Vehicle Width (meters)",
+        "height": "Vehicle Height (meters)",
+        "gvw": "Vehicle Permissible Gross Weight (GVW) (kg)",
+        "axles": "Number of Axles"
+      },
+      "categories": {
+        "economy": "Economy",
+        "luxury": "Luxury",
+        "sports": "Sports",
+        "family": "Family",
+        "commercial": "Commercial"
+      }
+    },
+    "step3": {
+      "title": "Technical Details",
+      "subtitle": "Vehicle Specifications",
+      "description": "Provide technical specifications of your vehicle",
+      "fields": {
+        "transmission": "Vehicle Transmission",
+        "motorPower": "Motor Power (kW)",
+        "driverType": "Driver Type",
+        "emissionClass": "Emission Class",
+        "emissionSticker": "Emission Sticker"
+      },
+      "transmissions": {
+        "automatic": "Automatic",
+        "manual": "Manual",
+        "cvt": "CVT",
+        "semi_automatic": "Semi-Automatic"
+      },
+      "driverTypes": {
+        "fwd": "Front Wheel Drive (FWD)",
+        "rwd": "Rear Wheel Drive (RWD)",
+        "awd": "All Wheel Drive (AWD)",
+        "4wd": "Four Wheel Drive (4WD)"
+      },
+      "emissionClasses": {
+        "euro1": "Euro 1",
+        "euro2": "Euro 2",
+        "euro3": "Euro 3",
+        "euro4": "Euro 4",
+        "euro5": "Euro 5",
+        "euro6": "Euro 6"
+      },
+      "emissionStickers": {
+        "green": "Green",
+        "yellow": "Yellow",
+        "red": "Red",
+        "none": "No Sticker Required"
+      }
+    },
+    "step4": {
+      "title": "Vehicle History",
+      "subtitle": "Vehicle Details",
+      "description": "Provide information about your vehicle's history and condition",
+      "fields": {
+        "mileage": "Mileage (km)",
+        "isUserVehicle": "Is this your personal vehicle?",
+        "numberOfOwners": "Number of Previous Owners",
+        "damageStatus": "Vehicle Damage Status",
+        "validationDate": "Validation Date",
+        "serviceHistory": "Service History",
+        "warrantyStatus": "Factory Warranty Status"
+      },
+      "damageStatus": {
+        "none": "No Damage",
+        "minor": "Minor Damage",
+        "moderate": "Moderate Damage",
+        "severe": "Severe Damage"
+      },
+      "serviceHistory": {
+        "complete": "Complete Service History",
+        "partial": "Partial Service History",
+        "none": "No Service History"
+      },
+      "warrantyStatus": {
+        "active": "Active Factory Warranty",
+        "expired": "Expired Factory Warranty",
+        "none": "No Factory Warranty"
+      }
+    },
+    "step5": {
+      "title": "Vehicle Features",
+      "subtitle": "Exterior & Safety",
+      "description": "Provide information about your vehicle's features and equipment",
+      "fields": {
+        "exteriorColor": "Exterior Color",
+        "metallic": "Metallic Paint",
+        "abs": "Antilocking System (ABS)",
+        "esp": "Electronic Stability Program (ESP)",
+        "secondaryAC": "Secondary Air Conditioning",
+        "cruiseControl": "Cruise Control",
+        "climatisation": "Climatisation",
+        "auxiliaryHeating": "Auxiliary Heating",
+        "selfSteering": "Self Steering Systems",
+        "acousticParking": "Acoustic Parking Assistants",
+        "visualParking": "Visual Parking Assistants",
+        "seats": "Seats",
+        "beds": "Number of Beds",
+        "sanitation": "Sanitation",
+        "comfortEquipment": "Other Comfort Equipment",
+        "infotainment": "Infotainment",
+        "extras": "Extras",
+        "trailerCoupling": "Trailer Coupling"
+      },
+      "colors": {
+        "black": "Black",
+        "white": "White",
+        "silver": "Silver",
+        "gray": "Gray",
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green",
+        "brown": "Brown",
+        "yellow": "Yellow",
+        "other": "Other"
+      },
+      "options": {
+        "yes": "Yes",
+        "no": "No"
+      }
+    },
+    "step6": {
+      "title": "Media & Details",
+      "subtitle": "Upload Media",
+      "description": "Add photos and videos of your vehicle",
+      "fields": {
+        "uploadFiles": "Upload Files",
+        "title": "Title",
+        "description": "Description",
+        "isNegotiable": "Is the price negotiable?"
+      },
+      "placeholders": {
+        "title": "Enter a title for your listing",
+        "description": "Describe your vehicle in detail"
+      }
+    },
+    "step7": {
+      "title": "Personal Information",
+      "subtitle": "Contact Details",
+      "description": "Please provide your personal information",
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email Address",
+        "dob": "Date of Birth"
+      },
+      "placeholders": {
+        "firstName": "Enter your first name",
+        "lastName": "Enter your last name",
+        "email": "Enter your email address"
+      }
+    },
+    "step8": {
+      "title": "Address Information",
+      "subtitle": "Contact Details",
+      "description": "Please provide your address and identification details",
+      "fields": {
+        "address": "Street Address",
+        "city": "City",
+        "state": "State/Province",
+        "country": "Country",
+        "nationalId": "National ID Number"
+      },
+      "placeholders": {
+        "address": "Enter your street address",
+        "city": "Enter your city",
+        "state": "Enter your state or province",
+        "country": "Enter your country",
+        "nationalId": "Enter your national ID number"
+      }
+    }
+  }
+}
