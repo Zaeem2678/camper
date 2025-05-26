@@ -1,15 +1,12 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import ActionButtons from '../CreatCamper/ActionsButtons';
-import { useTranslation } from 'react-i18next';
 
 const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
-  const { t } = useTranslation();
-
   return (
     <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', minHeight: '100%' }}>
       <Typography variant="h6" gutterBottom>
-        {t('protocol.step3.title')}
+        Step 3
       </Typography>
 
       <Box sx={{ 
@@ -21,7 +18,7 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
         flex: 1
       }}>
         <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 'bold' }}>
-          {t('protocol.step3.vehicleCondition.title')}
+          Vehicle Condition Assessment
         </Typography>
 
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
@@ -29,9 +26,7 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           <Box sx={{ display: 'flex', gap: 2 }}>
             {/* Mileage */}
             <Box sx={{ flex: 1 }}>
-              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                {t('protocol.step3.vehicleCondition.mileage')}
-              </label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Mileage according to the meter</label>
               <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
                 <input
                   type="number"
@@ -43,15 +38,13 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                     fontSize: '14px'
                   }}
                 />
-                <span style={{ fontSize: '14px', color: '#666' }}>{t('protocol.step3.units.km')}</span>
+                <span style={{ fontSize: '14px', color: '#666' }}>km</span>
               </Box>
             </Box>
 
             {/* Fuel Tank */}
             <Box sx={{ flex: 1 }}>
-              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                {t('protocol.step3.vehicleCondition.fuelTank')}
-              </label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Fuel Tank Level</label>
               <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
                 <input
                   type="number"
@@ -63,7 +56,7 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                     fontSize: '14px'
                   }}
                 />
-                <span style={{ fontSize: '14px', color: '#666' }}>{t('protocol.step3.units.percent')}</span>
+                <span style={{ fontSize: '14px', color: '#666' }}>%</span>
               </Box>
             </Box>
           </Box>
@@ -72,9 +65,7 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           <Box sx={{ display: 'flex', gap: 2 }}>
             {/* Engine Oil Level */}
             <Box sx={{ flex: 1 }}>
-              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                {t('protocol.step3.vehicleCondition.engineOil')}
-              </label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Engine Oil Level</label>
               <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
                 <input
                   type="number"
@@ -86,15 +77,13 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                     fontSize: '14px'
                   }}
                 />
-                <span style={{ fontSize: '14px', color: '#666' }}>{t('protocol.step3.units.percent')}</span>
+                <span style={{ fontSize: '14px', color: '#666' }}>%</span>
               </Box>
             </Box>
 
             {/* Gas Level */}
             <Box sx={{ flex: 1 }}>
-              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                {t('protocol.step3.vehicleCondition.gasLevel')}
-              </label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Gas Level</label>
               <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
                 <input
                   type="number"
@@ -106,7 +95,7 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                     fontSize: '14px'
                   }}
                 />
-                <span style={{ fontSize: '14px', color: '#666' }}>{t('protocol.step3.units.percent')}</span>
+                <span style={{ fontSize: '14px', color: '#666' }}>%</span>
               </Box>
             </Box>
           </Box>
@@ -115,9 +104,7 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           <Box sx={{ display: 'flex', gap: 2 }}>
             {/* Fresh Water Tank */}
             <Box sx={{ flex: 1 }}>
-              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                {t('protocol.step3.vehicleCondition.freshWater')}
-              </label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Fresh Water Tank Level</label>
               <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
                 <input
                   type="number"
@@ -129,15 +116,13 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                     fontSize: '14px'
                   }}
                 />
-                <span style={{ fontSize: '14px', color: '#666' }}>{t('protocol.step3.units.percent')}</span>
+                <span style={{ fontSize: '14px', color: '#666' }}>%</span>
               </Box>
             </Box>
 
             {/* Waste Water Tank */}
             <Box sx={{ flex: 1 }}>
-              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                {t('protocol.step3.vehicleCondition.wasteWater')}
-              </label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Waste Water Tank Level</label>
               <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
                 <input
                   type="number"
@@ -149,7 +134,7 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                     fontSize: '14px'
                   }}
                 />
-                <span style={{ fontSize: '14px', color: '#666' }}>{t('protocol.step3.units.percent')}</span>
+                <span style={{ fontSize: '14px', color: '#666' }}>%</span>
               </Box>
             </Box>
           </Box>
@@ -158,9 +143,7 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           <Box sx={{ display: 'flex', gap: 2 }}>
             {/* Tire Tread */}
             <Box sx={{ flex: 1 }}>
-              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                {t('protocol.step3.vehicleCondition.tireTread')}
-              </label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Tire Tread Depth</label>
               <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
                 <input
                   type="number"
@@ -172,7 +155,7 @@ const Step3 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                     fontSize: '14px'
                   }}
                 />
-                <span style={{ fontSize: '14px', color: '#666' }}>{t('protocol.step3.units.mm')}</span>
+                <span style={{ fontSize: '14px', color: '#666' }}>mm</span>
               </Box>
             </Box>
             <Box sx={{ flex: 1 }} /> {/* Empty box for alignment */}

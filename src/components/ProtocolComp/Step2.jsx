@@ -3,15 +3,12 @@ import { Box, Typography } from '@mui/material';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import ActionButtons from '../CreatCamper/ActionsButtons';
-import { useTranslation } from 'react-i18next';
 
 const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
-  const { t } = useTranslation();
-
   return (
     <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', minHeight: '100%' }}>
       <Typography variant="h6" gutterBottom>
-        {t('protocol.step2.title')}
+        Step 2
       </Typography>
 
       <Box sx={{ 
@@ -25,14 +22,12 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
         {/* Vehicle Pickup */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 'bold' }}>
-            {t('protocol.step2.vehiclePickup.title')}
+            Vehicle Pickup
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1, position: 'relative' }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.vehiclePickup.date')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Date</label>
                 <div style={{ position: 'relative' }}>
                   <input
                     type="text"
@@ -58,9 +53,7 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 </div>
               </Box>
               <Box sx={{ flex: 1, position: 'relative' }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.vehiclePickup.time')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Time</label>
                 <div style={{ position: 'relative' }}>
                   <input
                     type="text"
@@ -92,14 +85,12 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
         {/* Vehicle Return */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 'bold' }}>
-            {t('protocol.step2.vehicleReturn.title')}
+            Vehicle Return
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1, position: 'relative' }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.vehicleReturn.date')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Date</label>
                 <div style={{ position: 'relative' }}>
                   <input
                     type="text"
@@ -125,9 +116,7 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 </div>
               </Box>
               <Box sx={{ flex: 1, position: 'relative' }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.vehicleReturn.time')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Time</label>
                 <div style={{ position: 'relative' }}>
                   <input
                     type="text"
@@ -161,14 +150,12 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
         {/* Personal Information */}
         <Box>
           <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 'bold' }}>
-            {t('protocol.step2.personalInfo.title')}
+            Personal Information
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.personalInfo.firstName')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>First Name</label>
                 <input
                   type="text"
                   style={{
@@ -181,42 +168,7 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.personalInfo.lastName')}
-                </label>
-                <input
-                  type="text"
-                  style={{
-                    width: '100%',
-                    padding: '8px 12px',
-                    border: '1px solid #ccc',
-                    borderRadius: '4px',
-                    fontSize: '14px'
-                  }}
-                />
-              </Box>
-            </Box>
-
-            <Box sx={{ display: 'flex', gap: 2 }}>
-              <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.personalInfo.country')}
-                </label>
-                <input
-                  type="text"
-                  style={{
-                    width: '100%',
-                    padding: '8px 12px',
-                    border: '1px solid #ccc',
-                    borderRadius: '4px',
-                    fontSize: '14px'
-                  }}
-                />
-              </Box>
-              <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.personalInfo.city')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Last Name</label>
                 <input
                   type="text"
                   style={{
@@ -232,9 +184,7 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
 
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.personalInfo.state')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Country</label>
                 <input
                   type="text"
                   style={{
@@ -247,9 +197,36 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.personalInfo.zipCode')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>City</label>
+                <input
+                  type="text"
+                  style={{
+                    width: '100%',
+                    padding: '8px 12px',
+                    border: '1px solid #ccc',
+                    borderRadius: '4px',
+                    fontSize: '14px'
+                  }}
+                />
+              </Box>
+            </Box>
+
+            <Box sx={{ display: 'flex', gap: 2 }}>
+              <Box sx={{ flex: 1 }}>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>State</label>
+                <input
+                  type="text"
+                  style={{
+                    width: '100%',
+                    padding: '8px 12px',
+                    border: '1px solid #ccc',
+                    borderRadius: '4px',
+                    fontSize: '14px'
+                  }}
+                />
+              </Box>
+              <Box sx={{ flex: 1 }}>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Zip Code</label>
                 <input
                   type="text"
                   style={{
@@ -264,9 +241,7 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
             </Box>
 
             <Box>
-              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                {t('protocol.step2.personalInfo.dateOfBirth')}
-              </label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Date of Birth</label>
               <Box sx={{ display: 'flex', gap: 2 }}>
                 <Box sx={{ flex: 1 }}>
                   <input
@@ -312,9 +287,7 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
 
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.personalInfo.identityCard')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Identity Card Number</label>
                 <input
                   type="text"
                   style={{
@@ -327,9 +300,7 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step2.personalInfo.drivingLicense')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Driving License Number</label>
                 <input
                   type="text"
                   style={{
@@ -344,9 +315,7 @@ const Step2 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
             </Box>
 
             <Box>
-              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                {t('protocol.step2.personalInfo.dateOfIssue')}
-              </label>
+              <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Date of Issue</label>
               <div style={{ position: 'relative' }}>
                 <input
                   type="text"

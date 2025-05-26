@@ -1,18 +1,15 @@
 import React from 'react';
 import { Box, Typography, Button, Stack } from '@mui/material';
-import { useTranslation } from 'react-i18next';
 
 const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
-  const { t } = useTranslation();
-
   return (
     <Box sx={{ p: 2 }}>
       <Typography variant="h6" gutterBottom>
-        {t('protocol.step1.title')}
+        Step 1
       </Typography>
       
       <Typography variant="subtitle1" sx={{ mb: 3, color: 'text.secondary' }}>
-        {t('protocol.step1.subtitle')}
+        Please fill out two copies for tenant and landlord
       </Typography>
 
       <Box sx={{ 
@@ -25,14 +22,12 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
         {/* Booking Information */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 'bold' }}>
-            {t('protocol.step1.bookingInfo.title')}
+            Booking Information
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.bookingInfo.bookingNumber')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Booking Number</label>
                 <input
                   type="text"
                   style={{
@@ -45,9 +40,7 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.bookingInfo.vehicleId')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Vehicle Identification Number</label>
                 <input
                   type="text"
                   style={{
@@ -68,14 +61,12 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
         {/* Tenant Information */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 'bold' }}>
-            {t('protocol.step1.tenantInfo.title')}
+            Tenant Information
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.tenantInfo.name')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Name</label>
                 <input
                   type="text"
                   style={{
@@ -88,9 +79,7 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.tenantInfo.email')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Email</label>
                 <input
                   type="email"
                   style={{
@@ -105,9 +94,7 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
             </Box>
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.tenantInfo.address')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Address</label>
                 <input
                   type="text"
                   style={{
@@ -120,9 +107,7 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.tenantInfo.telephone')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Telephone</label>
                 <input
                   type="tel"
                   style={{
@@ -143,14 +128,12 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
         {/* Landlord Information */}
         <Box>
           <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 'bold' }}>
-            {t('protocol.step1.landlordInfo.title')}
+            Landlord Information
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.landlordInfo.name')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Name</label>
                 <input
                   type="text"
                   style={{
@@ -163,9 +146,7 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.landlordInfo.email')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Email</label>
                 <input
                   type="email"
                   style={{
@@ -180,9 +161,7 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
             </Box>
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.landlordInfo.address')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Address</label>
                 <input
                   type="text"
                   style={{
@@ -195,9 +174,7 @@ const Step1 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
                 />
               </Box>
               <Box sx={{ flex: 1 }}>
-                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>
-                  {t('protocol.step1.landlordInfo.telephone')}
-                </label>
+                <label style={{ display: 'block', marginBottom: '4px', fontSize: '14px' }}>Telephone</label>
                 <input
                   type="tel"
                   style={{

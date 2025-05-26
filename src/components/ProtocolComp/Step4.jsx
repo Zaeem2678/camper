@@ -1,15 +1,12 @@
 import React from 'react';
 import { Box, Typography, Checkbox, FormControlLabel } from '@mui/material';
 import ActionButtons from '../CreatCamper/ActionsButtons';
-import { useTranslation } from 'react-i18next';
 
 const Step4 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
-  const { t } = useTranslation();
-
   return (
     <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', minHeight: '100%' }}>
       <Typography variant="h6" gutterBottom>
-        {t('protocol.step4.title')}
+        Step 4
       </Typography>
 
       <Box sx={{ 
@@ -21,76 +18,56 @@ const Step4 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
         flex: 1
       }}>
         <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 'bold' }}>
-          {t('protocol.step4.vehicleDocumentation.title')}
+          Vehicle Documentation and Equipment Check
         </Typography>
 
         <Typography sx={{ mb: 3, color: 'text.secondary' }}>
-          {t('protocol.step4.vehicleDocumentation.description')}
+          Please verify the presence of all required documents and equipment. Check the box if present.
         </Typography>
 
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
           <FormControlLabel
             control={<Checkbox color="primary" />}
-            label={t('protocol.step4.vehicleDocumentation.items.registration')}
+            label="Vehicle registration document (registration)"
             sx={{ '& .MuiFormControlLabel-label': { fontSize: '14px' } }}
           />
 
           <FormControlLabel
             control={<Checkbox color="primary" />}
-            label={t('protocol.step4.vehicleDocumentation.items.insurance')}
+            label="International insurance card"
             sx={{ '& .MuiFormControlLabel-label': { fontSize: '14px' } }}
           />
 
           <FormControlLabel
             control={<Checkbox color="primary" />}
-            label={t('protocol.step4.vehicleDocumentation.items.instructions')}
+            label="Operating instructions"
             sx={{ '& .MuiFormControlLabel-label': { fontSize: '14px' } }}
           />
 
           <FormControlLabel
             control={<Checkbox color="primary" />}
-            label={t('protocol.step4.vehicleDocumentation.items.key')}
+            label="Vehicle key"
             sx={{ '& .MuiFormControlLabel-label': { fontSize: '14px' } }}
           />
 
           <FormControlLabel
             control={<Checkbox color="primary" />}
-            label={t('protocol.step4.vehicleDocumentation.items.tools')}
+            label="Onboard tools, warning triangle"
             sx={{ '& .MuiFormControlLabel-label': { fontSize: '14px' } }}
           />
 
           <FormControlLabel
             control={<Checkbox color="primary" />}
-            label={t('protocol.step4.vehicleDocumentation.items.safety')}
+            label="First aid kit, safety vests"
             sx={{ '& .MuiFormControlLabel-label': { fontSize: '14px' } }}
           />
 
           <FormControlLabel
             control={<Checkbox color="primary" />}
-            label={t('protocol.step4.vehicleDocumentation.items.spareWheel')}
+            label="Spare wheel and jack"
             sx={{ '& .MuiFormControlLabel-label': { fontSize: '14px' } }}
           />
         </Box>
-
-        {/* New Statement and Checkboxes */}
-        <Box sx={{ mt: 4, mb: 2 }}>
-          <Typography sx={{ mb: 2, color: 'text.secondary', fontSize: '14px' }}>
-            {t('protocol.step4.additionalStatement.description')}
-          </Typography>
-          <Box sx={{ display: 'flex', gap: 3 }}>
-            <FormControlLabel
-              control={<Checkbox color="primary" />}
-              label={t('protocol.step4.additionalStatement.yes')}
-              sx={{ '& .MuiFormControlLabel-label': { fontSize: '14px' } }}
-            />
-            <FormControlLabel
-              control={<Checkbox color="primary" />}
-              label={t('protocol.step4.additionalStatement.no')}
-              sx={{ '& .MuiFormControlLabel-label': { fontSize: '14px' } }}
-            />
-          </Box>
-        </Box>
-
       </Box>
 
       <Box sx={{ display: 'flex', justifyContent: 'center', mt: 'auto' }}>

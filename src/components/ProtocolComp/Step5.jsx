@@ -1,15 +1,12 @@
 import React from 'react';
 import { Box, Typography, Select, MenuItem, FormControl } from '@mui/material';
 import ActionButtons from '../CreatCamper/ActionsButtons';
-import { useTranslation } from 'react-i18next';
 
 const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
-  const { t } = useTranslation();
-
   return (
     <Box sx={{ p: 2, display: 'flex', flexDirection: 'column', minHeight: '100%' }}>
       <Typography variant="h6" gutterBottom>
-        {t('protocol.step5.title')}
+        Step 5
       </Typography>
 
       <Box sx={{ 
@@ -21,39 +18,35 @@ const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
         flex: 1
       }}>
         <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 'bold' }}>
-          {t('protocol.step5.vehicleOptions.title')}
+          Vehicle Options and Features
         </Typography>
 
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
           {/* First Row */}
           <Box sx={{ display: 'flex', gap: 2 }}>
             <Box sx={{ flex: 1 }}>
-              <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                {t('protocol.step5.vehicleOptions.vehicleOption')}
-              </Typography>
+              <Typography sx={{ fontSize: '14px', mb: 1 }}>Vehicle Option</Typography>
               <FormControl fullWidth size="small">
                 <Select
                   defaultValue=""
                   sx={{ fontSize: '14px' }}
                 >
-                  <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                  <MenuItem value="option1">{t('protocol.step5.vehicleOptions.option1')}</MenuItem>
-                  <MenuItem value="option2">{t('protocol.step5.vehicleOptions.option2')}</MenuItem>
+                  <MenuItem value="">Select Option</MenuItem>
+                  <MenuItem value="option1">Option 1</MenuItem>
+                  <MenuItem value="option2">Option 2</MenuItem>
                 </Select>
               </FormControl>
             </Box>
             <Box sx={{ flex: 1 }}>
-              <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                {t('protocol.step5.vehicleOptions.vehicleOption')}
-              </Typography>
+              <Typography sx={{ fontSize: '14px', mb: 1 }}>Vehicle Option</Typography>
               <FormControl fullWidth size="small">
                 <Select
                   defaultValue=""
                   sx={{ fontSize: '14px' }}
                 >
-                  <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                  <MenuItem value="option1">{t('protocol.step5.vehicleOptions.option1')}</MenuItem>
-                  <MenuItem value="option2">{t('protocol.step5.vehicleOptions.option2')}</MenuItem>
+                  <MenuItem value="">Select Option</MenuItem>
+                  <MenuItem value="option1">Option 1</MenuItem>
+                  <MenuItem value="option2">Option 2</MenuItem>
                 </Select>
               </FormControl>
             </Box>
@@ -62,32 +55,28 @@ const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           {/* Second Row */}
           <Box sx={{ display: 'flex', gap: 2 }}>
             <Box sx={{ flex: 1 }}>
-              <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                {t('protocol.step5.vehicleOptions.vehicleOption')}
-              </Typography>
+              <Typography sx={{ fontSize: '14px', mb: 1 }}>Vehicle Option</Typography>
               <FormControl fullWidth size="small">
                 <Select
                   defaultValue=""
                   sx={{ fontSize: '14px' }}
                 >
-                  <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                  <MenuItem value="option1">{t('protocol.step5.vehicleOptions.option1')}</MenuItem>
-                  <MenuItem value="option2">{t('protocol.step5.vehicleOptions.option2')}</MenuItem>
+                  <MenuItem value="">Select Option</MenuItem>
+                  <MenuItem value="option1">Option 1</MenuItem>
+                  <MenuItem value="option2">Option 2</MenuItem>
                 </Select>
               </FormControl>
             </Box>
             <Box sx={{ flex: 1 }}>
-              <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                {t('protocol.step5.vehicleOptions.vehicleOption')}
-              </Typography>
+              <Typography sx={{ fontSize: '14px', mb: 1 }}>Vehicle Option</Typography>
               <FormControl fullWidth size="small">
                 <Select
                   defaultValue=""
                   sx={{ fontSize: '14px' }}
                 >
-                  <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                  <MenuItem value="option1">{t('protocol.step5.vehicleOptions.option1')}</MenuItem>
-                  <MenuItem value="option2">{t('protocol.step5.vehicleOptions.option2')}</MenuItem>
+                  <MenuItem value="">Select Option</MenuItem>
+                  <MenuItem value="option1">Option 1</MenuItem>
+                  <MenuItem value="option2">Option 2</MenuItem>
                 </Select>
               </FormControl>
             </Box>
@@ -96,32 +85,28 @@ const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           {/* Third Row */}
           <Box sx={{ display: 'flex', gap: 2 }}>
             <Box sx={{ flex: 1 }}>
-              <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                {t('protocol.step5.vehicleOptions.vehicleOption')}
-              </Typography>
+              <Typography sx={{ fontSize: '14px', mb: 1 }}>Vehicle Option</Typography>
               <FormControl fullWidth size="small">
                 <Select
                   defaultValue=""
                   sx={{ fontSize: '14px' }}
                 >
-                  <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                  <MenuItem value="option1">{t('protocol.step5.vehicleOptions.option1')}</MenuItem>
-                  <MenuItem value="option2">{t('protocol.step5.vehicleOptions.option2')}</MenuItem>
+                  <MenuItem value="">Select Option</MenuItem>
+                  <MenuItem value="option1">Option 1</MenuItem>
+                  <MenuItem value="option2">Option 2</MenuItem>
                 </Select>
               </FormControl>
             </Box>
             <Box sx={{ flex: 1 }}>
-              <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                {t('protocol.step5.vehicleOptions.vehicleOption')}
-              </Typography>
+              <Typography sx={{ fontSize: '14px', mb: 1 }}>Vehicle Option</Typography>
               <FormControl fullWidth size="small">
                 <Select
                   defaultValue=""
                   sx={{ fontSize: '14px' }}
                 >
-                  <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                  <MenuItem value="option1">{t('protocol.step5.vehicleOptions.option1')}</MenuItem>
-                  <MenuItem value="option2">{t('protocol.step5.vehicleOptions.option2')}</MenuItem>
+                  <MenuItem value="">Select Option</MenuItem>
+                  <MenuItem value="option1">Option 1</MenuItem>
+                  <MenuItem value="option2">Option 2</MenuItem>
                 </Select>
               </FormControl>
             </Box>
@@ -130,17 +115,15 @@ const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           {/* Stove and Refrigerator */}
           <Box sx={{ display: 'flex', gap: 2 }}>
             <Box sx={{ flex: 1 }}>
-              <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                {t('protocol.step5.features.stove')}
-              </Typography>
+              <Typography sx={{ fontSize: '14px', mb: 1 }}>Stove</Typography>
               <FormControl fullWidth size="small">
                 <Select
                   defaultValue=""
                   sx={{ fontSize: '14px' }}
                 >
-                  <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                  <MenuItem value="yes">{t('protocol.step5.options.yes')}</MenuItem>
-                  <MenuItem value="no">{t('protocol.step5.options.no')}</MenuItem>
+                  <MenuItem value="">Select Option</MenuItem>
+                  <MenuItem value="yes">Yes</MenuItem>
+                  <MenuItem value="no">No</MenuItem>
                 </Select>
               </FormControl>
             </Box>
@@ -150,17 +133,15 @@ const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           {/* Refrigerator */}
           <Box sx={{ display: 'flex', gap: 2 }}>
             <Box sx={{ flex: 1 }}>
-              <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                {t('protocol.step5.features.refrigerator')}
-              </Typography>
+              <Typography sx={{ fontSize: '14px', mb: 1 }}>Refrigerator with freezer compartment</Typography>
               <FormControl fullWidth size="small">
                 <Select
                   defaultValue=""
                   sx={{ fontSize: '14px' }}
                 >
-                  <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                  <MenuItem value="yes">{t('protocol.step5.options.yes')}</MenuItem>
-                  <MenuItem value="no">{t('protocol.step5.options.no')}</MenuItem>
+                  <MenuItem value="">Select Option</MenuItem>
+                  <MenuItem value="yes">Yes</MenuItem>
+                  <MenuItem value="no">No</MenuItem>
                 </Select>
               </FormControl>
             </Box>
@@ -170,17 +151,15 @@ const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           {/* Vehicle Option */}
           <Box sx={{ display: 'flex', gap: 2 }}>
             <Box sx={{ flex: 1 }}>
-              <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                {t('protocol.step5.vehicleOptions.vehicleOption')}
-              </Typography>
+              <Typography sx={{ fontSize: '14px', mb: 1 }}>Vehicle Option</Typography>
               <FormControl fullWidth size="small">
                 <Select
                   defaultValue=""
                   sx={{ fontSize: '14px' }}
                 >
-                  <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                  <MenuItem value="option1">{t('protocol.step5.vehicleOptions.option1')}</MenuItem>
-                  <MenuItem value="option2">{t('protocol.step5.vehicleOptions.option2')}</MenuItem>
+                  <MenuItem value="">Select Option</MenuItem>
+                  <MenuItem value="option1">Option 1</MenuItem>
+                  <MenuItem value="option2">Option 2</MenuItem>
                 </Select>
               </FormControl>
             </Box>
@@ -191,32 +170,28 @@ const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                  {t('protocol.step5.features.waterConnection')}
-                </Typography>
+                <Typography sx={{ fontSize: '14px', mb: 1 }}>Water connection</Typography>
                 <FormControl fullWidth size="small">
                   <Select
                     defaultValue=""
                     sx={{ fontSize: '14px' }}
                   >
-                    <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                    <MenuItem value="yes">{t('protocol.step5.options.yes')}</MenuItem>
-                    <MenuItem value="no">{t('protocol.step5.options.no')}</MenuItem>
+                    <MenuItem value="">Select Option</MenuItem>
+                    <MenuItem value="yes">Yes</MenuItem>
+                    <MenuItem value="no">No</MenuItem>
                   </Select>
                 </FormControl>
               </Box>
               <Box sx={{ flex: 1 }}>
-                <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                  {t('protocol.step5.features.hotWater')}
-                </Typography>
+                <Typography sx={{ fontSize: '14px', mb: 1 }}>Hot water</Typography>
                 <FormControl fullWidth size="small">
                   <Select
                     defaultValue=""
                     sx={{ fontSize: '14px' }}
                   >
-                    <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                    <MenuItem value="yes">{t('protocol.step5.options.yes')}</MenuItem>
-                    <MenuItem value="no">{t('protocol.step5.options.no')}</MenuItem>
+                    <MenuItem value="">Select Option</MenuItem>
+                    <MenuItem value="yes">Yes</MenuItem>
+                    <MenuItem value="no">No</MenuItem>
                   </Select>
                 </FormControl>
               </Box>
@@ -224,17 +199,15 @@ const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
 
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                  {t('protocol.step5.features.bikeRack')}
-                </Typography>
+                <Typography sx={{ fontSize: '14px', mb: 1 }}>4-way bike rack</Typography>
                 <FormControl fullWidth size="small">
                   <Select
                     defaultValue=""
                     sx={{ fontSize: '14px' }}
                   >
-                    <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                    <MenuItem value="yes">{t('protocol.step5.options.yes')}</MenuItem>
-                    <MenuItem value="no">{t('protocol.step5.options.no')}</MenuItem>
+                    <MenuItem value="">Select Option</MenuItem>
+                    <MenuItem value="yes">Yes</MenuItem>
+                    <MenuItem value="no">No</MenuItem>
                   </Select>
                 </FormControl>
               </Box>
@@ -243,17 +216,15 @@ const Step5 = ({ onNext, onPrevious, isFirstStep, isLastStep }) => {
 
             <Box sx={{ display: 'flex', gap: 2 }}>
               <Box sx={{ flex: 1 }}>
-                <Typography sx={{ fontSize: '14px', mb: 1 }}>
-                  {t('protocol.step5.features.winterSuitable')}
-                </Typography>
+                <Typography sx={{ fontSize: '14px', mb: 1 }}>My camper is not suitable for the winter</Typography>
                 <FormControl fullWidth size="small">
                   <Select
                     defaultValue=""
                     sx={{ fontSize: '14px' }}
                   >
-                    <MenuItem value="">{t('protocol.step5.vehicleOptions.selectOption')}</MenuItem>
-                    <MenuItem value="yes">{t('protocol.step5.options.yes')}</MenuItem>
-                    <MenuItem value="no">{t('protocol.step5.options.no')}</MenuItem>
+                    <MenuItem value="">Select Option</MenuItem>
+                    <MenuItem value="yes">Yes</MenuItem>
+                    <MenuItem value="no">No</MenuItem>
                   </Select>
                 </FormControl>
               </Box>
